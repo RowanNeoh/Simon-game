@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press 'Start' Button to Start</h1>
+  <p id="level"></p>
+  
+<!-- Trigger/Open The Modal -->
+<button type="button" class="button button2" id="btnRecord" onclick="displayUsernames()">Record</button>
+<button type="button" class="button button5" id="btnClearRecord" onclick="clearRecord()">Clear Record</button>
+<button type="button" class="button" id="btnStart" onclick="start()">start</button>
+<span id="playerName"></span>
+
+<!-- Register Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 class="heading">Enter Your Name</h2>
+    </div>
+    <div class="modal-body">
+      <p>Name : <input type="text" id="name" value=""></p>
+      <p><button type="button" class="btnRegister button button5" onclick="saveRecord()">Save</button></p>      
+      
+    </div>
+    <div class="modal-footer">
+      <h3></h3>
+    </div>
+  </div>
+</div>
+
+<!-- Records Modal -->
+<div id="recordModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 class="heading">Players record</h2>
+    </div>
+    <div class="modal-body">      
+      <span id="userList" style="text-align: -webkit-center; font-size: 30px;"></span>
+      
+    </div>
+    <div class="modal-footer">
+      <h3 class="heading">Thank you</h3>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div lass="row">
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/js/game.js" charset="UTF-8"></script>
+</body>
+
+</html>
