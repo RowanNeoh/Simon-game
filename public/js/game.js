@@ -98,10 +98,13 @@ function saveRecord(){
         // Retrieve existing players    
         let playerss = localStorage.getItem('playerName') || [];
         let maxPlayers = 7;        
-        
-        let players = JSON.parse(playerss)
-        if (players.length > maxPlayers) {
-            players.splice(maxPlayers); // Remove elements beyond the max length
+        console.log(playerss);
+        let players = [];
+        if (playerss.length > 0){
+         players = JSON.parse(playerss)
+            if (players.length > maxPlayers) {
+                players.splice(maxPlayers); // Remove elements beyond the max length
+            }
         }
         // Add the new username to the array
         players.push([playerName,(finalScore-1)]);
