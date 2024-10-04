@@ -7,11 +7,13 @@ git clone https://github.com/RowanNeoh/Simon-game.git
 Install pakcage.json file
 npm install or npm i
 
-Intall nodemon
-npm install nodemon
+Install nodemon
+
+    npm install nodemon
 
 run npm manager in root folder
-npm run dev
+
+    npm run dev
 
 # Build with
 Node.js
