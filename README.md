@@ -7,6 +7,9 @@ git clone https://github.com/RowanNeoh/Simon-game.git
 Install pakcage.json file
 npm install or npm i
 
+Install ejs
+npm install ejs
+
 Install nodemon
 
     npm install nodemon
